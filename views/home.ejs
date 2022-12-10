@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hospital API guide</title>
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <div>
+    <h1>API Guide for Postman</h1>
+    <h3>Using localhost:3000/hospitals (with Get Request)</h3>
+    <p>It will show all added hospitals</p>
+
+    <h4>Using localhost:3000/hospitals/1 (with Get Request)</h4>
+    <p>It will show Hospital Details with ID:1</p>
+
+    <h4>Using localhost:3000/hospitals (with Post Request)</h4>
+    <p>It will add a Hospital to a database or you can use form below</p>
+
+    <h4>Using localhost:3000/hospitals (with Delete Request)</h4>
+    <p>It will delete all hospitals from database</p>
+
+    <h4>Using localhost:3000/hospitals/1 (with Patch Request)</h4>
+    <p>It will update the data with hospital ID:1</p>
+    </div>
+
+    <div>
+      <h1>FORM TO ADD HOSPITAL DIRECTLY</h1>
+    <form action="/hospitals" method="post">
+
+      <div class="formg">
+        <label>Input Unique ID, else it wont be Saved</label>
+        <input type="text" name="_id">
+        <label>Hospital Name</label>
+        <input type="text" name="name">
+        <label>Total Patients</label>
+        <input type="text" name="totalPatients">
+      </div>
+
+      <div class="formg">
+      <label>Name of Psychiatrist-1</label>
+      <input type="text" name="psy1Name">
+      <label>No. of patients Psychiatrist-1 handles</label>
+      <input type="text" name="psy1patientCount">
+      </div>
+
+      <div class="formg">
+      <label>Name of Psychiatrist-2</label>
+      <input type="text" name="psy2Name">
+      <label>No. of patients Psychiatrist-2 handles</label>
+      <input type="text" name="psy2patientCount">
+      </div>
+
+      <div class="formg">
+      <label>Name of Psychiatrist-3</label>
+      <input type="text" name="psy3Name">
+      <label>No. of patients Psychiatrist-3 handles</label>
+      <input type="text" name="psy3patientCount">
+      </div>
+
+      <div class="formg">
+      <label>Name of Psychiatrist-4</label>
+      <input type="text" name="psy4Name">
+      <label>No. of patients Psychiatrist-4 handles</label>
+      <input type="text" name="psy4patientCount">
+      </div>
+
+      <div class="formg">
+      <label>Name of Psychiatrist-5</label>
+      <input type="text" name="psy5Name">
+      <label>No. of patients Psychiatrist-5 handles</label>
+      <input type="text" name="psy5patientCount">
+      </div>
+
+      <button type="submit" name="button">SUBMIT</button>
+    </form>
+    </div>
+  </body>
+  </html>
